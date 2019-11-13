@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="phoneapp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.js"></script>
+    <script>
+        var app = angular.module("phoneapp", []);
+        app.controller("main", function($scope) {
+            $scope.title = "Phonebook Application - v1.1";
+
+            $scope.names = ["Vinod", "Shyam", "John", "Jane"]
+        })
+    </script>
+</head>
+<body ng-controller="main">
+    <div>
+        <h1 ng-bind="title"></h1>
+        <hr >
+
+        <input type="text" ng-model="title">
+
+        <div>
+            <ul ng-repeat="name in names">
+                <li ng-bind="name"></li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>
