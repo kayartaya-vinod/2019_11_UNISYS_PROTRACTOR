@@ -76,7 +76,7 @@ module.exports.fibo = fibo = (index)=>{
         }
         else {
             let a=-1, b=1, c;
-            for(let i=0; i<index; i++) {
+            for(let i=0; i<=index; i++) {
                 c = a + b;
                 a = b;
                 b = c;
