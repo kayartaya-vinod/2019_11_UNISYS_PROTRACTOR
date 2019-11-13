@@ -2,4 +2,4 @@
 
 ## November 2019.
 
-By Vinod (https://vinod.co)
+By <a href="mailto:vinod@vinod.co">Vinod</a>, https://vinod.co
