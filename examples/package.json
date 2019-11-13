@@ -1,0 +1,29 @@
+{
+  "name": "examples",
+  "version": "1.0.0",
+  "description": "Node js and testing examples",
+  "main": "ex01.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jasmine test/*.spec.js",
+    "start": "node ex02.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kayartaya-vinod"
+  },
+  "keywords": [
+    "node",
+    "test",
+    "jasmine",
+    "typescript",
+    "protractor"
+  ],
+  "author": "Vinod <vinod@vinod.co>",
+  "license": "MIT",
+  "dependencies": {
+    "jasmine": "^3.5.0"
+  }
+}
