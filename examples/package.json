@@ -7,6 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
+    "_comment": "start and test are prefined and can be run using 'npm start' or 'npm test and any additional script names must be run using 'num run xxx'",
     "test": "jasmine test/*.spec.js",
     "start": "node ex02.js"
   },

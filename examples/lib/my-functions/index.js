@@ -59,5 +59,29 @@ module.exports.subtotal = (filename, callback) => {
             callback(null, retval);
         });
 
-    }, 3000);
+    }, 0);
 }
+
+
+module.exports.fibo = fibo = (index)=>{
+    return new Promise((resolve, reject)=>{
+        if(index<0) {
+            reject('Invalid index. Must be >= 0');
+        }
+        else if(index==0) {
+            resolve(0);
+        }
+        else if(index==1) {
+            resolve(1);
+        }
+        else {
+            let a=-1, b=1, c;
+            for(let i=0; i<index; i++) {
+                c = a + b;
+                a = b;
+                b = c;
+            }
+            resolve(c);
+        }
+    });
+};
