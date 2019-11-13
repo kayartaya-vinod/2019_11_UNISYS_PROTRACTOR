@@ -8,7 +8,7 @@ async function takeScreenshot() {
     await file.end();
 }
 
-describe('Testing Phonebook application', ()=>{
+xdescribe('Testing Phonebook application', ()=>{
 
     beforeEach(()=>{
         browser.get('https://vinod.co/phonebook-webapp/');
